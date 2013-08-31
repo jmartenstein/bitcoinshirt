@@ -19,4 +19,4 @@ app.router.get('/version', function () {
   this.res.end( 'flatiron' + flatiron.version );
 });
 
-app.start(80);
+app.start(8080);

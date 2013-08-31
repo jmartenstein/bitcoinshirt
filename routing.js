@@ -19,4 +19,7 @@ app.router.get('/version', function () {
   this.res.end( 'flatiron' + flatiron.version );
 });
 
-app.start(5000);
+var port = process.env.PORT || 5000;
+app.start(port, function() {
+  console.log("Listening on " + port);
+});

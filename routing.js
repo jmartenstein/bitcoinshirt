@@ -7,11 +7,11 @@ app.use(flatiron.plugins.http, {
   // HTTP options
 });
 
-var text = fs.readFileSync('index.html');
-var buffer = new Buffer(text);
+var text_index = fs.readFileSync('index.html');
+var buff_index = new Buffer(text_index);
 
 app.router.get('/', function () {
-  this.res.end(buffer.toString());
+  this.res.end(buff_index.toString());
 });
 
 app.router.get('/version', function () {

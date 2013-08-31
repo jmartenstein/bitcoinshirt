@@ -2,7 +2,7 @@
   "name": "thebitcoinshirt",
   "version": "0.0.1",
   "dependencies": {
-    "flatiron": "0.3.x"m
+    "flatiron": "0.3.x",
     "union": "1.3.x"
   },
   "engines": {

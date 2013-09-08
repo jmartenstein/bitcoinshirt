@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "flatiron": "0.3.x",
-    "union": "0.3.x"
+    "union": "0.3.x",
+    "st": "0.1.0"
   },
   "engines": {
     "node": "0.10.x",

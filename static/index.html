@@ -11,96 +11,13 @@
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800">
-
-  <style type="text/css">
-    
-    /* Space out content a bit */
-    body {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    /* Everything but the jumbotron gets side spacing for mobile first views */
-    .header,
-    .marketing,
-    .footer {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    /* Custom page header */
-    .header {
-      border-bottom: 1px solid #e5e5e5;
-    }
-    /* Make the masthead heading the same height as the navigation */
-    .header h3 {
-      margin-top: 0;
-      margin-bottom: 0;
-      line-height: 40px;
-      padding-bottom: 19px;
-    }
-
-    /* Custom page footer */
-    .footer {
-      padding-top: 19px;
-      color: #777;
-      border-top: 1px solid #e5e5e5;
-    }
-
-    /* Customize container */
-    @media (min-width: 768px) {
-      .container {
-        max-width: 730px;
-      }
-    }
-    .container-narrow > hr {
-      margin: 30px 0;
-    }
-
-    /* Main marketing message and sign up button */
-    .jumbotron {
-      text-align: center;
-      border-bottom: 1px solid #e5e5e5;
-    }
-    /*.jumbotron .btn {
-      font-size: 21px;
-      padding: 14px 24px;
-    }*/
-
-    /* Supporting marketing content */
-    .marketing {
-      margin: 40px 0;
-    }
-    .marketing p + h4 {
-      margin-top: 28px;
-    }
-
-    /* Responsive: Portrait tablets and up */
-    @media screen and (min-width: 768px) {
-      /* Remove the padding we set earlier */
-      .header,
-      .marketing,
-      .footer {
-        padding-left: 0;
-        padding-right: 0;
-      }
-      /* Space out the masthead */
-      .header {
-        margin-bottom: 30px;
-      }
-      /* Remove the bottom border on the jumbotron for visual effect */
-      .jumbotron {
-        border-bottom: 0;
-      }
-  }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="carousel.css">
 
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="header">
       <ul class="nav nav-pills pull-right">
@@ -110,63 +27,58 @@
       <h3 class="text-muted">The Bitcoin Shirt (Voting!)</h3>
     </div>
 
-    <div class="jumbotron">
-      <h1>buy a shirt<br/>
-          pay with bitcoins</h1>
-      <p class="lead">
-        We're working on the design now. Check <a href="http://www.twitter.com/bitcoinshirt">@bitcoinshirt</a>
-        for updates, or sign up for the mailing list.
-      </p>
-      <form class="bs-example bs-example-form" action="https://tinyletter.com/thebitcoinshirt" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/thebitcoinshirt', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-       
-       <!-- <p> -->
-          <!-- <label for="tlemail">Enter your email address</label> -->
-          <input type="hidden" value="1" name="embed"/>
+  <div class="row-fluid">
 
-          <div class="row">
-          <div class="col-md-8 col-md-offset-2">
+  <div id="design-carousel" class="carousel slide">
 
-          <div class="input-group">
-            <input type="text" name="email" id="tlemail" class="form-control" placeholder="email address">
-            <span class="input-group-btn">
-             <button type="submit" class="btn btn-primary btn-med">Submit</button>
-            </span>
-          </div>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#design-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#design-carousel" data-slide-to="1"></li>
+      <li data-target="#design-carousel" data-slide-to="2"></li>
+    </ol>
 
-          </div>
-          </div>
-                        
-          <!--
-          <input type="text" style="width:240px" name="email" id="tlemail" value="email"/>
-          <input type="submit" value="Subscribe" />
-          -->
-        <!--<p> -->
-        
-        <!--
-        <a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p>
-        -->
-      </form>
-    
-    <p>
+    <div class="carousel-inner">
 
-      <!-- social buttons -->
-      <div id="social-buttons" class="hidden-print">
-      <div class="bs-social">
-      <!--<ul class="unstyled inline">
-        <li class="follow-btn"> -->
-          <a href="https://twitter.com/bitcoinshirt" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
-        <!-- </li>
-        <li class="tweet-btn"> -->
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bitcoinshirt.org/" data-count="horizontal" data-via="bitcoinshirt" data-related="jmartenstein:Creator of Bitcoin Shirt">Tweet</a>
-        <!--</li>
+      <div class="item active">
+        <div class="carousel-caption">
+          <h1>Which is <b>darker</b>?</h1>
+        </div> <!-- class="carousel-caption" -->
+        <div class="inner-item">
+          <img src="http://placehold.it/500x333">
+          <img src="http://placehold.it/500x333">
+        </div>
+      </div>  <!-- class="item active" -->
+      
+      <div class="item">
+        <div class="carousel-caption">
+          <h1>Which is <b>more creative</b>?</h1>
+        </div> <!-- class="carousel-caption" -->
+        <div class="inner-item">
+          <img src="http://placehold.it/500x333">
+          <img src="http://placehold.it/500x333">
+        </div>
+      </div>  <!-- class="item" -->
+      
+      <div class="item">
+        <div class="carousel-caption">
+          <h1>Which is <b>geekier</b>?</h1>
+        </div> <!-- class="carousel-caption" -->
+        <div class="inner-item">
+          <img src="http://placehold.it/500x333">
+          <img src="http://placehold.it/500x333">
+        </div>
+      </div>  <!-- class="item" -->
 
-      </ul>-->
-      </div>
-      </div> <!-- class="row" -->
+    </div> <!-- class="carousel-inner" -->
 
-    </p>
+    <a class="left carousel-control" href="#design-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#design-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
-    </div> <!-- class="jumbtron" -->
+
+  </div> <!-- id="design-carousel" -->
+
+  </div> <!-- class="row-fluid" -->
 
   <div class="row marketing">
     <div class="col-md-8">
@@ -198,8 +110,8 @@
 
 <!-- load javascript last, to save time -->
 <script src="http://platform.twitter.com/widgets.js"></script>
-<script src="./assets/js/jquery-1.7.1.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="http://code.jquery.com/jquery.js"></script>
 
 
